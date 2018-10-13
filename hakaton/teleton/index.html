@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+            <table class="table">
+                    <h2>Tabla de Usuarios</h2>
+                    <thead >
+                      <tr>
+                          <td id="busquedaReferencia" scope="col">Buscar Referencua</td>
+                        <td id="Nombre-Usuario" scope="col">Nombre</td>
+                        <td id="Apellido-Usuario" scope="col">Edad</td>
+                        <td id="Tipo-Usuario" scope="col">Email</td>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <hr>
+                        <tbody id="mainPortal"></tbody>
+                    <hr>
+                    <div id="mainReferencia"></div>
+                    <div id="mainCrid"></div>
+                    <hr>
+                </table>
+                <input type="button" id="add" class="btn btn-primary" value="Agerar Usuario" style="font-size:14px;cursor:pointer;margin:15px;padding:5px;"/>
+                <section class="row">
+                        <div id="form" class="form col-sm-6 offset-sm-3">
+                            <h3>Nuevo Donativo</h3>
+                            <form action="" class="custom-form">
+                                <div class="form-group">
+                                    <label for="">Cantidad:</label>
+                                    <input id="donativo-cantidad" class="form-control" type="text" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Fecha:</label>
+                                    <input id="donativo-fecha" class="form-control" value="" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Referencia:</label>
+                                    <input id="donativo-referencia" class="form-control" value="" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Institucion:</label>
+                                    <input id="donativo-institucion" class="form-control" type="text" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Status:</label>
+                                    <input id="donativo-status" class="form-control" type="text" value="">
+                                </div>
+                                <div type="submit" id="submit-button" class="btn btn-primary" >Agregar</div>
+                                <div type="submit" id="btnLimpiar" class="btn btn-success" >Limpiar</div>
+                                <input type="button" id="submit-referencia" class="btn btn-success" value="Verificar Referencia">
+                                <input type="text" id="idReferencia">
+                            </form>
+                        </div>
+                    </section>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB4f0jYvzJ8zFLf41GusKDShnFrj_6vQbc",
+        authDomain: "teleton-5d93f.firebaseapp.com",
+        databaseURL: "https://teleton-5d93f.firebaseio.com",
+        projectId: "teleton-5d93f",
+        storageBucket: "teleton-5d93f.appspot.com",
+        messagingSenderId: "598649530633"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

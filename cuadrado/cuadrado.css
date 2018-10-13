@@ -1,0 +1,35 @@
+@keyframes animacionColor {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+.cuadrado{
+	border:solid 2px red;
+	width: 50vw;
+	height:50vw;
+	background: orange;
+	margin-left:0;
+	max-width: 50vmin;
+	max-height:50vmin;
+	margin:25vh auto;
+}
+.checkbox:checked ~ .cuadrado {
+	
+	
+	/*transition: margin 10s ease,border-radius 2s ease, background-color 5s linear;
+	*/	
+	animation-name: animacionColor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.check-detener-animacion:cheched ~ animacionColor{
+   animation-play-state: paused;
+}
+	
+
+.cuadrado:hover{
+	margin-left: 200px;
+	border-radius: 50%;
+	background-color: blue;
+}

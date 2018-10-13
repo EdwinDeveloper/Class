@@ -1,0 +1,103 @@
+body{
+	color:white;
+}
+.left-panel{
+	width: 20%;
+	height: 100vh;
+	background: gray;
+	margin-left: 0;
+	float: left;
+}
+.right-panel{
+	width: 80%;
+	height: 100vh;
+	background: black;
+	margin-right: 0;
+	float: left;
+}
+.nav-wrapper{
+
+}
+.imagen-si{
+	width: 100%;
+}
+.nav-header{
+	text-align: center;
+}
+.div-image img{
+	width: 8%;
+	margin:15px 15px;
+	float: left;
+}
+.contenedor-nav{
+	display: inline-block;
+}
+.nav-wrapper{
+}
+div.nav-pills{
+	padding-top: 15px;
+    display: inline-block;
+    width: 32%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 15px;
+    border:solid 1px gray;
+}
+div.nav-pills:hover{
+	cursor:pointer;
+	background-color: gray;
+}
+.main-wrapper{
+	display: inline-block;
+	width: 100%;
+}
+.lg-w-50p{
+	width: 50%;
+}
+.lg-w-25p{
+	width:25%;
+}
+div.content-col{
+	float:left;
+	padding-left: 25px;
+    margin-top: 25px;
+    height: 20vh;
+    box-sizing: border-box;
+}
+.input-group{
+	text-align: center;
+}
+.flex-container div{
+	display: inline-block;
+	text-align: center;
+}
+.flex-container span{
+	background-color: white;
+	border-radius: 5%;
+	color: black;
+	padding: 1px;
+	float: left;
+	border-right: 0;
+	border:solid 1px gray;
+}
+div.labeled-input input{
+	border-left: 0;
+	border:solid 1px gray;
+}
+div.cuandro-indeformable{
+	margin:200px 200px;
+	width: 250px;
+	height: 250px;
+	background-color: blue;
+}
+@media only screen and (min-width:500px) and (max-width:790px){
+	body{
+		background-color: orange;
+	}
+	div.cuadro-indeformable{
+		float: left;
+		margin:100px 100px;
+		width: 150px;
+		height: 150px;
+	}
+}

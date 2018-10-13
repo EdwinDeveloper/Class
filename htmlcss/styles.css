@@ -1,0 +1,97 @@
+		.crear-fix::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		html { height:100%; }
+		body{
+			width: 100%;
+			height: 100%;
+			background-color: white;
+			position: absolute;
+			border: 0;
+			
+		}
+		div#left-panel{
+			width: 30%;
+			height: 100%;
+			background-color: blue;
+			float: left;
+		}
+		div#right-panel{
+			width: 70%;
+	        height: 100%;
+			background-color: blue ;
+			float: right;
+		}
+		div#brand-wrapper{
+			width: 100%;
+			height: 25%;
+			background-color: white;
+			padding:top;
+		}
+		div#nav-wrapper{
+			width: 100%;
+			height: 75%;
+			background-color: blue;
+			padding-top:10px;
+
+		}
+		div.user-tag{
+			width: 100%;
+			height: 50px;
+			background-color: blue;
+			color:white;
+		}
+		div.user-tag:hover{
+			background-color: #62C9E3;
+		}
+		div.user-tag-especial{
+			background-color: #62C9E3;
+		}
+		img{
+			padding-left: 20px;
+		}
+		#usuario{
+			color:white;
+			font-size: 20px;
+			padding-left: 60px;
+		}
+		#usuario2{
+			color: white;
+			font-size: 14px;
+			padding:25px 0 0 180px;
+		}
+		#navtabs{
+			width: 90%;
+			float: left;
+			background-color: white;
+			color:black;
+			margin:20px 20px;
+			height: 100%;
+		}
+		.pesta{
+			background-color: white;
+			color: black;
+
+		}
+		i.fas{
+			font-size: 2rem;
+			text-align: center;
+		}
+		i.fab{
+			font-size: 2rem;
+			text-align: center;
+		}
+		.user-options{
+			text-align: center;
+		}
+		#aprendizaje{
+			
+		}
+		.periodo{
+			float: left;
+		}
+		.aprendozaje{
+			float: right;
+		}

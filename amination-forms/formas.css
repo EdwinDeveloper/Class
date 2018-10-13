@@ -1,0 +1,88 @@
+@keyframes animacion {
+    0%   {
+            background-image: linear-gradient(red, yellow);
+            border-radius:0%;
+            margin :0 0;
+         }
+    25%  {
+            background-image: linear-gradient(green, blue);
+            border-radius: 0%;
+            margin: 200px 200px;
+         }
+    50% {
+            background-image: linear-gradient(orange, gray);
+            border-radius: 50%;
+            width: 400px;
+            margin:400px 200px;
+        }
+    75%{
+            background-color:none;
+            border-radius: 50%;
+            width: 200px;
+            margin:400px 400px;
+      }
+      100%{
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent;
+        border-left: 100px solid red;
+        border-bottom: 50px solid transparent;
+        background: none;
+      }
+}
+.main-form{
+    width:200px;
+    height:200px;
+    background-color:orange;
+
+}
+.check-iniciar:checked ~ .main-form{
+    animation-name: animacion;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+.check-pausar:checked ~ .main-form{
+    animation-play-state: paused;
+}
+
+#space-invader{
+
+    box-shadow:
+      0 0 0 1em red,
+      0 1em 0 1em red,
+      -2.5em 1.5em 0 .5em red,
+      2.5em 1.5em 0 .5em red,
+      -3em -3em 0 0 red,
+      3em -3em 0 0 red,
+      -2em -2em 0 0 red,
+      2em -2em 0 0 red,
+      -3em -1em 0 0 red,
+      -2em -1em 0 0 red,
+      2em -1em 0 0 red,
+      3em -1em 0 0 red,
+      -4em 0 0 0 red,
+      -3em 0 0 0 red,
+      3em 0 0 0 red,
+      4em 0 0 0 red,
+      -5em 1em 0 0 red,
+      -4em 1em 0 0 red,
+      4em 1em 0 0 red,
+      5em 1em 0 0 red,
+      -5em 2em 0 0 red,
+      5em 2em 0 0 red,
+      -5em 3em 0 0 red,
+      -3em 3em 0 0 red,
+      3em 3em 0 0 red,
+      5em 3em 0 0 red,
+      -2em 4em 0 0 red,
+      -1em 4em 0 0 red,
+      1em 4em 0 0 red,
+      2em 4em 0 0 red;
+  
+      background: red;
+      width: 1em;
+      height: 1em;
+      overflow: hidden;
+  
+      margin: 50px 0 70px 65px;
+    }

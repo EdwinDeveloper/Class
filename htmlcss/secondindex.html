@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="second.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<div class="contenedor">
+		<nav class="user-navigation">
+			<div class="logo">
+				<img class="imagen-si" src="img/vallarta.png" alt="ImageVallarta">
+			</div>
+		
+			<div class="user-options">
+					<a href="" class="option-usuario">
+						<i class="fas fa-user"></i>
+						<li class="user-option">Edwin Giovanni</li>
+					</a>
+			</div>
+			<div class="menu-navegacion">
+				<a href="" class="option">
+					<i class="fas fa-book-reader"></i><li> Catalogos</li>
+				</a>
+				<a href="" class="option">
+					<i class="fab fa-buromobelexperte"></i><li> Plantillas</li>
+				</a>
+				<a href="" class="option">
+					<i class="fas fa-flag"></i><li> Reporteador</li>
+				</a>
+				<a href="" class="option">
+					<i class="fas fa-users"></i><li> Gestion de Usuarios</li>
+				</a>
+				<a href="" class="option">
+					<i class="fas fa-times-circle"></i><li> Cerrar Sesion</li>
+				</a>
+			</div>
+		</nav>
+		<div class="right-area">
+			<div class="nav-wrapper">
+					<button class="nav-buttons" onclick="funcionvallarta('informacion')" value="" id="">Informacion</button>
+					<button class="nav-buttons" onclick="funcionvallarta('datos')" value="" id="">Datos</button>
+					<button class="nav-buttons largo" onclick="funcionvallarta('masinfo')" value="" id="">Mas informacion</button>
+					<button class="nav-buttons" onclick="funcionvallarta('masdatos')" value="" id="">Mas datos</button>
+					<button class="nav-buttons largo" onclick="funcionvallarta('redundancia')" value="" id="">Reduncancia de datos</button>
+					<button class="nav-buttons largo" onclick="funcionvallarta('reduninfo')" value="" id="">Redundancia de informacion</button>
+			</div>
+		<div class="main-wrapper">
+			<div id="informacion" class="content-col enlaceV">
+				<div class="input-inicio w-50p">
+						<label for="">Selecciona el periodo que deseas consultar.</label><br><br>
+						<input class="fecha" type="date" placeholder="De:" placeholder="De:">
+						<input class="fecha" type="date" placeholder="Hasta:">
+				</div>
+				<div class="input-inicio sele-apre w-25p">
+						<label for="">Elemento de aprendizaje</label><br><br>
+						<select class="select" name="" value="Selecciona una opción">
+							<option>Opción 1</option>
+							<option>Opción 2</option>
+							<option>Opción 3</option>
+						</select>
+				</div>
+				<div class="input-inicio sele-curso w-25p">
+						<label for="">Selecciona el curso</label><br><br>
+						<select class="select" name="" value="Selecciona una opción">
+							<option>Opción 1</option>
+							<option>Opción 2</option>
+							<option>Opción 3</option>
+						</select><br><br>
+						<button class="button">Consultar</button>
+				</div><br>
+					
+			</div>
+			<div id="datos" class="content-col enlaceV" style="display:none">
+					<div class="input-inicio">
+						<label for="">Selecciona el periodo que deseas consultar.</label><br>De: <br>
+						<input class="fecha" type="date" placeholder="De:" placeholder="De:">
+						<label for="">Hasta: </label>
+						<input class="fecha" type="date" placeholder="Hasta:">
+				</div>
+				<div class="input-inicio sele-apre">
+						<label for="">Elemento de aprendizaje</label><br><br>
+						<select class="select" name="" value="Selecciona una opción">
+							<option>Opción 1</option>
+							<option>Opción 2</option>
+							<option>Opción 3</option>
+						</select>
+				</div>
+				<div class="input-inicio sele-curso">
+						<label for="">Selecciona el curso</label><br><br>
+						<select class="select" name="" value="Selecciona una opción">
+							<option>Opción 1</option>
+							<option>Opción 2</option>
+							<option>Opción 3</option>
+						</select><br><br>
+						<button class="button">Consultar</button>
+				</div><br>
+			</div>
+			<div id="masinfo" class="content-col enlaceV" style="display:none">
+					<div class="input-inicio">
+						<label for="">Selecciona el periodo que deseas consultar.</label><br><br>
+						<input class="fecha" type="date" placeholder="De:" placeholder="De:">
+						<input class="fecha" type="date" placeholder="Hasta:">
+				</div>
+				<div class="input-inicio sele-apre">
+						<label>Elemento de aprendizaje</label><br><br>
+						<select class="select" name="" value="Selecciona una opción">
+							<option>Opción 1</option>
+							<option>Opción 2</option>
+							<option>Opción 3</option>
+						</select>
+				</div>
+				<div class="input-inicio sele-curso">
+						<label for="">Selecciona el curso</label><br><br>
+						<select class="select" name="" value="Selecciona una opción">
+							<option>Opción 1</option>
+							<option>Opción 2</option>
+							<option>Opción 3</option>
+						</select><br><br>
+						<button class="button">Consultar</button>
+				</div><br>
+			</div>
+			<div id="masdatos" class="content-col enlaceV" style="display:none">
+					<div class="input-group">
+						<label for="">More i</label>
+					</div>
+			</div>
+			<div id="redundancia" class="content-col enlaceV" style="display:none">
+					<div class="input-group">
+						<label for="">More i</label>
+					</div>
+			</div>
+			<div id="reduninfo" class="content-col enlaceV" style="display:none" disabled>
+					<div class="input-group">
+						<label for="">More i</label>
+					</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<script src="javascript.js"></script>
+</body>
+</html>

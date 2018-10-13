@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-container">
+        <div class="show-information"></div>
+    </div>
+    <input type="button" id="add" class="btn btn-primary" value="Agerar Usuario" style="font-size:14px;cursor:pointer;margin:15px;padding:5px;"/>
+    <section class="row">
+            <div class="second-container">
+                <input type="text" id="donacion-referencia">
+                <button id="donacion" value="aceptar" onclick="getDataReference()"></button>
+            </div>
+        </section>
+        <canvas id="fisrtGraph" width="400" height="400"></canvas>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAXYMD8ibb5_z4N5uKUMbUEGmq__bF4d3s",
+    authDomain: "teleton-11772.firebaseapp.com",
+    databaseURL: "https://teleton-11772.firebaseio.com",
+    projectId: "teleton-11772",
+    storageBucket: "teleton-11772.appspot.com",
+    messagingSenderId: "815108641293"
+  };
+  firebase.initializeApp(config);
+</script> -->
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA6AUrsxmoi645-1yhv-F9W9G3q2_RKj44",
+    authDomain: "hackatonteleton.firebaseapp.com",
+    databaseURL: "https://hackatonteleton.firebaseio.com",
+    projectId: "hackatonteleton",
+    storageBucket: "hackatonteleton.appspot.com",
+    messagingSenderId: "730018138942"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/java.js"></script>
+</body>
+</html>

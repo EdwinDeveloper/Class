@@ -1,0 +1,45 @@
+[{
+    "bootcamp": "White 2da Generación",
+    "cowork": "COW Cowork",
+    "duracion": "15 semanas",
+    "alumnos" : [
+      {
+        "nombre":"Raquel",
+        "apellido": "Gomez",
+        "genero": "F"
+      },
+      {
+        "nombre":"Kevin",
+        "apellido": "Arroyo",
+        "genero": "M"
+      },
+      {
+        "nombre":"Rosa",
+        "apellido": "Ortega",
+        "genero": "F"
+      }
+    ]
+  },
+  {
+    "bootcamp": "White 3ra Generación",
+    "cowork": "COW Cowork",
+    "duracion": "15 semanas",
+    "alumnos" : [
+      {
+        "nombre":"Juan",
+        "apellido": "Gomez",
+        "genero": "M"
+      },
+      {
+        "nombre":"Kevin2",
+        "apellido": "Arroyo",
+        "genero": "M"
+      },
+      {
+        "nombre":"Rose",
+        "apellido": "Ortega",
+        "genero": "F"
+      }
+    ]
+  }]
+  
