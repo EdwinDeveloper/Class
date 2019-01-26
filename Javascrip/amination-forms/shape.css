@@ -1,0 +1,121 @@
+@keyframes triangle {
+    0%   {
+            width:200px;
+            height: 200px;
+            background-color: blue;
+         }
+    100% {
+        width: 0;
+        height: 0;
+        border-top: 200px solid transparent;
+        border-left: 200px solid red;
+        border-bottom: 0px solid transparent;
+        background: none;
+         }
+}
+@keyframes circle {
+    0%   {
+            width:200px;
+            height: 200px;
+            background-color: blue;
+         }
+    100% {
+        width:200px;
+        height: 200px;
+        background-color: green;
+        border-radius: 50%;
+         }
+}
+@keyframes start{
+    0%  {
+        width:200px;
+        height: 200px;
+        background-color: blue;  
+        }
+    100%{
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid red;
+        position: relative;
+        background: none;
+        
+        }
+}
+@keyframes star_after {
+    0%   {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid red;
+            position: absolute;
+            content: "";
+            top:30px;
+            left:-50px;
+            background: none;
+            opacity: 0;
+         }
+    100%  {
+            opacity: 1;
+         }
+}
+@keyframes rectangle {
+    0%   {
+            width:200px;
+            height: 200px;
+            background-color: blue;
+         }
+    100%  {
+        width:400px;
+        height: 200px;
+        background-color: orange;
+         }
+}
+.main-shape{
+    width:200px;
+    height: 200px;
+    background-color: blue;
+}
+.to-triangle:checked ~ .main-shape{
+    animation-name: triangle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.to-circle:checked ~ .main-shape{
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.to-rectangle:checked ~ .main-shape{
+    animation-name:rectangle ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.to-star:checked ~ .main-shape{
+    animation-name: start ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.star{
+    width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	position: relative;
+}
+.star:after{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+    position: absolute;
+    content: "";
+    top:30px;
+    left:-50px;
+    background: none;
+    opacity: 0;
+}

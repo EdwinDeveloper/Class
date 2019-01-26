@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href='./main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script><!---Dom-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">//TRASPILADOR DE BABEL
+
+        // function Saludar(props) {//RECIBE UN UNICO PARAMETRO Y ES TIPO PROPS
+        //     const { name , edad } = props;
+        //     return <h1>Hola soy {name} y tengo {edad} años </h1>
+        // }
+        class Saludar extends React.Component{
+            render(){
+              let { name , edad } = this.props;
+              return<h1>Hola soy {name} y tengo {edad} años </h1>;
+            }
+        }
+        class Animal extends React.Component{
+            render(){
+              return(
+                <div>
+                  <AnimalTitle/>
+                  <AnimalTable/>
+                </div>
+              );
+            }
+        }
+        class AnimalTable extends React.Component{
+          render(){
+
+            return(
+                  <table>
+                        <tr>
+                            <td>Name </td>
+                        </tr>
+                        <tr>
+                            <td>Model </td>
+                        </tr>
+                        <tr>
+                            <td>Human </td>
+                        </tr>
+                  </table>
+            )
+          }
+        }
+
+        class AnimalTitle extends React.Component{
+          render(){
+            return(
+              <h1>Animal</h1>
+            )
+          }
+        }
+        class App extends React.Component{
+            render(){
+              return(
+                <div>
+                    <Animal/>
+                    <Animal/>
+                </div>
+              );
+            }
+        }
+        const dom = document.getElementById('root');
+        ReactDOM.render(
+          <App/>
+          ,
+            dom
+        );
+    </script>
+</body>
+</html>

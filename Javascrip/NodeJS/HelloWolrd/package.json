@@ -1,0 +1,20 @@
+{
+  "name": "hellowolrd",
+  "version": "1.0.0",
+  "description": "Primer Proyecto node desde Kodemia",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "iniciar": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edwin",
+  "license": "MIT",
+  "dependencies": {
+    "reach": "^1.0.1",
+    "react": "^16.6.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}

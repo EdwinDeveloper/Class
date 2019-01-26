@@ -1,0 +1,7 @@
+{"_id":{"$oid":"5bec95539c88840962254331"},"name":"Chiles en ahogada","price":199,"description":"de nayarit","__v":0}
+{"_id":{"$oid":"5bec95b29c88840962254335"},"name":"Frijoles dona","price":299,"description":"delegacion ","__v":0}
+{"_id":{"$oid":"5bee2f9f6126650809e63806"},"name":"Frijoles dona","price":199,"description":"the best dish the restaurant has","__v":0}
+{"_id":{"$oid":"5bee2fe86126650809e63807"},"name":"the misa special","price":399,"description":"Misa has a job ","__v":0}
+{"_id":{"$oid":"5bee300a6126650809e63808"},"name":"the misa special","price":399,"description":"Misa has a job very important","__v":0}
+{"_id":{"$oid":"5bee30256126650809e63809"},"name":"the evil burrito","price":399,"description":"spicy dishes","__v":0}
+{"_id":{"$oid":"5bee30a16126650809e6380e"},"name":"the international","price":399,"description":"spicy dishes from","__v":0}

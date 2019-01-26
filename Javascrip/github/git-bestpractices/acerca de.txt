@@ -1,0 +1,6 @@
+Nombre: 		Luis E. Jiménez
+Edad: 			23
+Nacionalidad: 		mexicano
+Originario de: 		Tijuana, Baja California
+Estudios:		Ing. en Computación
+Profesión:		Lead Project Manager

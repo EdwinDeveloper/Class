@@ -1,0 +1,318 @@
+
+.forma {
+	animation-name: forma-automatica;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.forma:after {
+	content: '';
+	animation-name: forma-automatica-after;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+
+#triangle:checked ~ .shape{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  background: white;
+}
+#circle:checked ~ .shape{
+	width: 100px;
+  height: 100px;
+  background: red;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+#star:checked ~ .shape{
+	width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  position: relative;
+  background: white;
+}
+
+#star:checked ~ .shape:after{
+	width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: -50px;
+}
+
+#rectangle:checked ~ .shape{
+	width: 200px;
+	background: gray;
+}
+
+
+#heart:checked ~ .shape {
+		background: white;
+
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+#heart:checked ~ .shape:before {
+		background: white;
+
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+
+#heart:checked ~ .shape:after {
+	background: white;
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:checked ~ .shape:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+#ying-yang:checked ~ .shape {
+	width: 96px;
+	height: 48px;
+	background: #eee;
+	border-color: red;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	position: relative;
+}
+
+#ying-yang:checked ~ .shape:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: #eee;
+	border: 18px solid red;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+}
+
+#ying-yang:checked ~ .shape:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: red;
+	border: 18px solid #eee;
+	border-radius:100%;
+	width: 12px;
+	height: 12px;
+}
+
+
+
+
+
+.shape , .forma	{
+	height: 100px;
+	width:   100px;
+	background: red;
+	transition: all 2s;
+}
+
+
+@keyframes forma-automatica {
+	/*rectangulo*/
+	20%{
+    height: 100px;
+	width:   200px;
+	background: blue;
+
+	/*sumados*/
+	-moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+	}
+	/*circulo*/ 
+	40%{
+   width: 100px;
+   height: 100px;
+   background: green;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  /*sumados*/
+
+  border-left: none;
+border-right: none;
+border-bottom: none;
+
+	}
+	/*triangulo*/
+	60%{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid purple;
+  border-radius: 0px;
+  background: white;
+	}
+	/*estrella*/
+	80%{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid DarkRed;
+  position: relative;
+  background: white;
+	}
+/*regreso a rectangulo*/
+	100%{
+    height: 100px;
+	width:   100px;
+	background: red;
+	/*sumados*/
+	border-left: none;
+  border-right: none;
+  border-bottom: none;
+
+	}
+
+}
+
+@keyframes forma-automatica-after {
+	/*rectangulo*/
+	20%{
+  visibility: 0;
+	}
+	/*circulo*/ 
+	40%{
+  visibility: 0;
+	}
+	/*triangulo*/
+	60%{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 0px solid red;
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 00px;
+  visibility: 0;
+	}
+	/*estrella*/
+	80%{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid DarkRed;
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: -50px;
+   visibility: 100;
+
+	}
+	100%{
+  visibility: 0;
+	}
+}
+
+
+
+
+
+
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+  
+.star-six {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  position: relative;
+}
+.star-six:after {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: -50px;
+}
+

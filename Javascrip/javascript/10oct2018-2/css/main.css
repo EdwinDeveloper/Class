@@ -1,0 +1,13 @@
+td{
+    background-color: orange;
+    text-align: center;
+    padding-top: 5px;
+}
+td:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+table{
+    margin: auto auto;
+}

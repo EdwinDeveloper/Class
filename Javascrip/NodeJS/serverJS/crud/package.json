@@ -1,0 +1,21 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "crud system",
+  "main": "crud.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nop"
+  },
+  "keywords": [
+    "crud"
+  ],
+  "author": "Edwin Developer",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

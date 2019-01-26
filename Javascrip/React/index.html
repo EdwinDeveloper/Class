@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Edwin React</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script><!---Dom-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">//TRASPILADOR DE BABEL
+        const name="Juan";
+        
+        // const user = {
+        //     name:"",
+        //     age:27,
+        //     saludar(){ return `Hola soy ${user.name} y tengo ${user.age} años`;}
+        // }
+        // if(user.name=="Juan"){
+        //     user.name="Charley"
+        // }else{
+        //     user.name="Extraño"
+        // }
+        
+        const dog =[
+            {
+            breed:"German shepherd",
+            img:"http://s6004.pcdn.co/wp-content/uploads/2015/04/9fd904c1f2f47885511213b449d1e3bd-730x430.jpg"
+            },
+            {
+            breed:"Chihuahua",
+            img:"https://www.yourpurebredpuppy.com/dogbreeds/photos-CD/chihuahuasf1.jpg"
+            },
+            {
+            breed:"Autralian shepherd",
+            img:"https://soyunperro.com/wp-content/uploads/2019/02/perro-pastor-australiano.jpg"
+            }
+        ]
+        class Dog extends Component{
+            render(){
+                let { dog[0] }= dog;
+                return(
+                    <h1>Edwin Informacion {dog[0]}</h1>
+                )
+            }
+        }
+        
+        const element = dog
+        
+        ReactDOM.render(
+            <Dog/>,
+            document.getElementById('root')
+                // React.createElement(
+                //     "div",
+                //     {className:"container"},
+                //     React.createElement(
+                //         'figure',
+                //         null,
+                //         React.createElement(
+                //             'img',
+                //             {src:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Escudo_del_Cruz_Azul.svg/1014px-Escudo_del_Cruz_Azul.svg.png",
+                //             alt:""}
+                            
+                //         )
+                //     ),
+                //     React.createElement(
+                //        'div',
+                //        {className:"content"},
+                       
+                //        React.createElement(
+                //            'p',
+                //            null,
+                //            "hola ",
+                //            React.createElement(
+                //                'strong',
+                //                null,
+                //                'Koders'
+                //            )
+                //        ) 
+                //     )
+                // )
+        );
+        /*element Elemento que va a realizar la accion
+        container Donde lo va a pintar*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.title{
+    font-family: petite-caps;
+    color:blue;
+}
+.table{
+  width: 200px;
+  height: 100px;
+  border:solid 1px red;
+}

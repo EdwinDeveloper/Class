@@ -1,0 +1,95 @@
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto auto;
+}
+.main-container .content-cv {
+  width: 80%;
+  display: flex;
+  background-color: aquamarine;
+  border-radius: 10%;
+}
+.main-container .content-cv .left-information {
+  width: 30%;
+  height: 700px;
+  background-color: #6b9ee0;
+  margin: auto auto;
+  box-shadow: 10px 10px 40px -12px #8888;
+}
+.main-container .content-cv .left-information .content-img {
+  width: 70%;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 30px;
+  background-image: url("../../../../../../Downloads/yo.png");
+  background-repeat: no-repeat;
+  background-size: 220px 200px;
+}
+.main-container .content-cv .left-information .content-img:hover {
+  cursor: pointer;
+}
+.main-container .content-cv .left-information .name-cv {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 1rem;
+  margin: auto;
+  text-align: center;
+}
+.main-container .content-cv .left-information .name-cv h1 {
+  margin: 20px 0 0;
+}
+.main-container .content-cv .left-information .name-cv h1:hover {
+  color: aquamarine;
+  cursor: pointer;
+}
+.main-container .content-cv .left-information .name-cv h2 {
+  margin: 20px 0 0;
+}
+.main-container .content-cv .left-information .name-cv h2:hover {
+  color: aquamarine;
+  cursor: pointer;
+}
+.main-container .content-cv .left-information .name-cv h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.main-container .content-cv .left-information .name-cv h3:hover {
+  color: aquamarine;
+  cursor: pointer;
+}
+.main-container .content-cv .left-information .github {
+  font-size: 3rem;
+  color: white;
+  margin-left: 120px;
+}
+.main-container .content-cv .left-information .github:hover {
+  color: aquamarine;
+  cursor: pointer;
+}
+.main-container .content-cv .left-information .gracias {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  margin-left: 50px;
+  text-justify: auto;
+}
+.main-container .content-cv .rigth-information {
+  width: 50%;
+  height: 700px;
+  background-color: white;
+  margin: auto;
+  margin-left: -126px;
+  box-shadow: 10px 10px 40px -12px #8888;
+}
+.main-container .content-cv .rigth-information .info-user {
+  width: 80%;
+  margin: auto auto;
+}
+.main-container .content-cv .rigth-information .info-user p {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 60px;
+}
+
+/*# sourceMappingURL=main.css.map */

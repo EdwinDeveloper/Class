@@ -1,0 +1,10 @@
+Las tecnologias que actualmente utilizo son :
+
+jQuery, Javascript, css, HTML, C# admeas de manejadores de bases de datos
+como MySQL, SQL Server, entoy aprendiendo la nueva tendencia que son las bases NoSQL, como lo es MongoDB, FireBase
+
+ademas conozco un poco de precomplicadores como los siguientes:
+
+sass, typeScrip,
+
+Lo que espero de este curso es reforsar mis conocimientos de git lo mas profecional posible 

@@ -1,0 +1,1 @@
+Angular 2+, C, ASM x86, Ionic, Firebase, Polymer, Typescript, Python, Traccar, Arduino

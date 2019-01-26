@@ -1,0 +1,99 @@
+.main-container{
+    width:100%;
+    // background-color: aquamarine;
+    // height: 700px;
+    // display: flex;
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
+    .content-cv{
+        width: 80%;
+        display: flex;
+        background-color: aquamarine;
+        border-radius: 10%;
+        .left-information{
+            width:30%;
+            height:700px;
+            background-color:rgb(107, 158, 224);
+            margin: auto auto;
+            box-shadow: 10px 10px 40px -12px #8888;
+            .content-img{
+                width: 70%;
+                height: 200px;
+                border-radius: 50%;
+                margin: auto;
+                margin-top:30px;
+                background-image: url('../../../../../../Downloads/yo.png');
+                background-repeat: no-repeat;
+                background-size: 220px 200px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .name-cv{
+                font-family: 'Arial Narrow', Arial, sans-serif;
+                color:white;
+                font-size: 1rem;
+                margin: auto;
+                text-align: center;
+                h1{
+                    margin: 20px 0 0;
+                    &:hover{
+                        color:aquamarine;
+                        cursor: pointer;
+    
+                    }
+                }
+                h2{
+                    margin: 20px 0 0;
+                    &:hover{
+                        color:aquamarine;
+                        cursor: pointer;
+                    }
+                }
+                h3{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 1rem;
+                    &:hover{
+                        color:aquamarine;
+                        cursor: pointer;
+    
+                    }
+                }
+            }
+            .github{
+                font-size: 3rem;
+                color:white;
+                margin-left: 120px;
+                &:hover{
+                    color:aquamarine;
+                    cursor: pointer;
+
+                }
+            }
+            .gracias{
+                color:white;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 1rem;
+                margin-left: 50px;
+                text-justify: auto;
+            }
+        }
+        .rigth-information{
+            width:50%;
+            height:700px;
+            background-color:white;
+            margin: auto;
+            margin-left: -126px;
+            box-shadow: 10px 10px 40px -12px #8888;
+            .info-user{
+                width: 80%;
+                margin: auto auto;
+                p{
+                    font-family: 'Courier New', Courier, monospace;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
+}

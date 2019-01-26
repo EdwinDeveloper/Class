@@ -1,0 +1,19 @@
+
+.car-per{
+    width: 30px;
+    height: 40px;
+    margin-top:10px;
+    background-color: peru;
+    border: solid 2px red;
+}
+.eaea{
+    width: 30px;
+    height: 40px;
+    margin-top:10px;
+    background-color: green;
+    border: solid 2px orange;
+}
+.extra{
+    width: 60px;
+    background-color: brown;
+}

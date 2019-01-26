@@ -1,0 +1,23 @@
+.main-parent{
+	width: 50%;
+	height: 50vh;
+	background-color: skyblue;
+	display: block;
+	position: absolute;
+}
+.secondary-parent{
+	width: 80%;
+	height: 40vh;
+	background: peru;
+	margin-left:60px;
+	margin-top: 90px;
+
+}
+.absolute{
+	width:100px;
+	height:100px;
+	margin-left: 50px;
+	margin-top: 50px;
+	background: green;
+	position:relative;
+}

@@ -1,0 +1,21 @@
+body *{
+	background:black;
+}
+/*.nav-buttons:nth-of-type{
+
+}
+
+.nav-buttons:fisrt-of-type(odd//selecciona los pares){
+	
+}
+
+<!---.nav-buttons:last-of-type(even //impares ){
+	
+}*/
+.nav-buttons{
+	background:orange;
+	border:solid 2px basehd;
+}
+.nav-buttons:nth-last-of-type(5){
+	border: solid 1px red;
+}	

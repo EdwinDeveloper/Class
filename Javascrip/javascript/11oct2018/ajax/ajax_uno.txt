@@ -1,0 +1,2 @@
+<h1>Ajax 1</h1>
+<p>Su primer AJAX :D<p>
