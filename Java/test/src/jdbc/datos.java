@@ -5,11 +5,11 @@ public class datos {
 	public static String JDBC_DRIVER="com.mysql.jdbc.Driver";
 	public static String JDBC_URL="jdbc:mysql://localhost/sga?useSSL=false";
 	public static String JDBC_USER = "root";
-	public static String JDBC_PASS = "************";
+	public static String JDBC_PASS = "Eltigre4100";
 	public static Driver driver = null;
 	
-	public static synchronized Connection geConnection() {
-		throw SQLException{
+	public static synchronized Connection geConnection()
+		throws SQLException{
 			if(driver==null) {
 				try {
 					Class jdbcDriverClass = Class.forName(JDBC_DRIVER);
@@ -20,7 +20,7 @@ public class datos {
 					e.printStackTrace();
 				}
 			}
-		}
+		
 		return DriverManager.getConnection(JDBC_URL,JDBC_USER,JDBC_PASS);
 	}
 	
@@ -44,7 +44,7 @@ public class datos {
 		}
 	}
 	
-	public static void cole(Connection con) {
+	public static void close(Connection con) {
 		try {
 			if(con!=null) {
 				con.close();
